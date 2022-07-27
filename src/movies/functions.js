@@ -26,3 +26,11 @@ exports.updateMovie = async (movieObj) => {
         console.log(error);
     }
 }
+
+exports.deleteMovie = async (movieObj) => {
+    try {
+       const results = await Movie.deleteOne(movieObj)
+    } catch (error) {
+        console.log(error);
+    }
+ }
